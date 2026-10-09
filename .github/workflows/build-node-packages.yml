@@ -22,8 +22,8 @@ on:
 
 jobs:
   node:
-    name: Node
-    uses: v-priyagupta108/versions-package-tools/.github/workflows/build-tool-packages.yml@checksum-format
+    name: Node  
+    uses: v-priyagupta108/versions-package-tools/.github/workflows/build-tool-packages.yml@checksum-verification
     with:
       tool-name: "node"
       tool-version: ${{ inputs.VERSION || '18.12.0' }}
